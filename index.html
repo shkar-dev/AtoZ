@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="don't need to think, you get what you need">
+    <meta name="keywords"
+        content="A to Z, a to z, a-to-z, A-to-Z, market, shop, bakery, dairy, snacks, detergents، buthcer, fruits">
+    <title>A to Z</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo/favicon.png">
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <header>
+            <div class="home">
+                <i class="fa fa-home "></i>
+                <p>home</p>
+                <span></span>
+            </div>
+            <div class="menu">
+                <i class="fa fa-bars" id="menu"></i>
+            </div>
+            <img src="logo/logo.png" alt="Logo">
+        </header>
+        <!-- <div class="logo">
+            <span></span>
+            <img src="logo.png" alt="Logo">
+            <span></span>
+        </div> -->
+        <div class="coming-soon">
+            <h1>coming soon</h1>
+        </div>
+        <div class="images">
+            <img src="image/1.png" alt="" class="image1">
+            <img src="image/2.png" alt="" class="image2">
+            <img src="image/3.png" alt="" class="image3">
+            <img src="image/4.png" alt="" class="image4">
+            <img src="image/5.png" alt="" class="image5">
+            <img src="image/6.png" alt="" class="image6">
+            <img src="image/7.png" alt="" class="image7">
+            <img src="image/8.png" alt="" class="image8">
+            <img src="image/9.png" alt="" class="image9">
+        </div>
+        <footer>
+            <div class="icon">
+                <a href="https://www.instagram.com/a.to.z_krd?igsh=NTc4MTIwNjQ2YQ==" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61562642265158&name=xhp_ntfbaction__open_user"
+                    target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/@a.to.z__krd?_t=8qe8UbPGfpQ&_r=1" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.google.com/maps/place/A+to+Z/@35.5892608,45.4243229,15z/data=!4m6!3m5!1s0x40002d8977d41b27:0x957609e279c51865!8m2!3d35.5892608!4d45.4243229!16s%2Fg%2F11wg88qygj?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank">
+                    <i class="fa fa-location-dot"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="menu-mobile">
+        <div class="first">
+
+            <i class="fa fa-close" id="close"> </i>
+        </div>
+
+        <div class="second">
+            <div class="row-mobile">
+                <i class="fa fa-home "></i>
+                <p>home</p>
+                <span></span>
+            </div>
+        </div>
+        <div class="third">
+            <img src="logo/logo2.png" />
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    var setElementHeight = function () {
+        var height = $(window).height();
+        $('.autoheight').css('min-height', (height));
+    };
+
+    $(window).on("resize", function () {
+        setElementHeight();
+    }).resize();
+
+    $('#menu').on('click', function () {
+        $('.menu-mobile').css('transform', 'translateX(0%)');
+    });
+    $('#close').on('click', function () {
+        $('.menu-mobile').css('transform', 'translateX(-100%)');
+    });
+</script>
+
+</html>
